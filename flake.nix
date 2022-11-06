@@ -11,12 +11,22 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };
-    outputs = {self, darwin, nixpkgs, home-manager}: {
+    outputs = {self, darwin, nixpkgs, home-manager}@inputs: {
         darwinConfigurations = {
             default = darwin.lib.darwinSystem {
                 system = "aarch64-darwin";
                 modules = [
                     ./darwin-configuration.nix
+                    home-manager.darwinModules.home-manager {
+                        users.users.sem = {
+                            name = "sem";
+                            home = "/Users/sem";
+                        };
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+                        home-manager.users.cor = import ./home.nix;
+                        home-manager.extraSpecialArgs = { inherit inputs; };
+                    };
                 ];
             };
         };
