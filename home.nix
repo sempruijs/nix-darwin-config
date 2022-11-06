@@ -6,6 +6,11 @@
         git 
         git-lfs
         neofetch
+        pandoc
+        haskellPackages.latex
+        librsvg
+        python
+        texlive.combined.scheme-full
     ];
 
     # Hide "last login" message on new terminal.
