@@ -12,6 +12,7 @@
         python
         texlive.combined.scheme-full
         element-desktop
+        helix
     ];
 
     # Hide "last login" message on new terminal.
