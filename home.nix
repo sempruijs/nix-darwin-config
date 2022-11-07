@@ -10,8 +10,7 @@
         haskellPackages.latex
         librsvg
         python
-        texlive.combined.scheme-full
-        element-desktop
+        texlive.combined.scheme-full        
         helix
     ];
 

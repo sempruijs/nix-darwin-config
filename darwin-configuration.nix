@@ -7,7 +7,12 @@
   };
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  environment.systemPackages = with pkgs; [ gnumake coreutils cmake ];
+  environment.systemPackages = with pkgs; [ 
+    gnumake
+    coreutils
+    cmake 
+    element-desktop
+  ];
   networking = let name = "SemBook"; in {
     computerName = name;
     hostName = name;
