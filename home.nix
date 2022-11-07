@@ -11,6 +11,7 @@
         librsvg
         python
         texlive.combined.scheme-full
+        element-desktop
     ];
 
     # Hide "last login" message on new terminal.
@@ -21,7 +22,7 @@
         Host *
             AddKeysToAgent yes
             UseKeychain yes
-            IdentityFile ~/.ssh/id_ed25519  
+            IdentityFile ~/.ssh/id_rsa
     '';
 
 }
