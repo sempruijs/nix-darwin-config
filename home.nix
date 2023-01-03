@@ -12,6 +12,12 @@
         python
         texlive.combined.scheme-full        
         helix
+        tree
+        nodePackages.webpack
+        nodePackages.webpack-cli
+        ruby
+        cocoapods
+        slides
     ];
 
     # Hide "last login" message on new terminal.
