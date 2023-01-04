@@ -12,6 +12,7 @@
     coreutils
     cmake 
     element-desktop
+    vscodium
   ];
   networking = let name = "SemBook"; in {
     computerName = name;
