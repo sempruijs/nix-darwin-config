@@ -4,6 +4,14 @@
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
+    settings = {
+      substituters = [ 
+        "https://nixos-search.cachix.org" 
+      ];
+      trusted-public-keys = [
+        "nixos-search.cachix.org-1:1HV3YF8az4fywnH+pAd+CXFEdpTXtv9WpoivPi+H70o="
+      ];
+    };
   };
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
@@ -13,6 +21,7 @@
     cmake 
     element-desktop
     vscodium
+    kitty
   ];
   networking = let name = "SemBook"; in {
     computerName = name;
