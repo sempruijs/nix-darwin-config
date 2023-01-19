@@ -13,7 +13,6 @@
         librsvg
         python
         texlive.combined.scheme-full        
-        helix
         tree
         nodePackages.webpack
         nodePackages.webpack-cli
@@ -33,4 +32,5 @@
             IdentityFile ~/.ssh/id_rsa
     '';
 
+    programs.helix = import programs/helix.nix inputs.helix.packages.${pkgs.system}.default;
 }

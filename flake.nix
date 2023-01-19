@@ -10,8 +10,9 @@
             url = "github:nix-community/home-manager/release-22.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        helix.url = "github:helix-editor/helix";
     };
-    outputs = {self, darwin, nixpkgs, home-manager}@inputs: {
+    outputs = {self, darwin, nixpkgs, home-manager, ...}@inputs: {
         darwinConfigurations = {
             default = darwin.lib.darwinSystem {
                 system = "aarch64-darwin";
