@@ -6,6 +6,7 @@
         git 
         git-lfs
         gh
+        lazygit
         neofetch
         pandoc
         haskellPackages.latex
