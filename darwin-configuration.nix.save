@@ -1,6 +1,5 @@
-{ config, pkgs, ... }: 
-{    
-  nix = {
+{ config, pkgs, ... }: {
+jjjjjjj  nix = {
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
