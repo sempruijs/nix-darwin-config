@@ -13,7 +13,7 @@ package: {
       color-modes = true;
       indent-guides.render = true;
       file-picker.hidden = false;
-      auto-pairs = false;
+      auto-pairs = true;
       lsp.display-messages = true;
       bufferline = "always";
       statusline = {
