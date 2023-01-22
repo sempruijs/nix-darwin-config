@@ -3,7 +3,7 @@ package: {
   inherit package;
 
   settings = {
-    theme = "autumn_night";
+    theme = "github_light_high_contrast";
     editor = {
       auto-format = true;
       completion-trigger-len = 0;
