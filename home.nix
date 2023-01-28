@@ -19,6 +19,7 @@
         ruby
         cocoapods
         slides
+        ripgrep
     ];
 
     # Hide "last login" message on new terminal.
