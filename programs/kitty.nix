@@ -13,7 +13,7 @@ package: {
       macos_option_as_alt = true;
     };
     font = {
-      size = 40; # physically equivalent
+      size = 46; # physically equivalent
       name = "JetBrains Mono";
     };
     keybindings = {
