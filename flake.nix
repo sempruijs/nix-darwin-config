@@ -1,7 +1,7 @@
 {
     description = "NixOS system by sempruijs";
     inputs = {
-        nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
+        nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
         darwin = {
             url = "github:lnl7/nix-darwin/master";
             inputs.nixpkgs.follows = "nixpkgs";

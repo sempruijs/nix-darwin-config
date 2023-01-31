@@ -11,7 +11,7 @@
         pandoc
         haskellPackages.latex
         librsvg
-        python
+        python3
         texlive.combined.scheme-full        
         tree
         nodePackages.webpack
@@ -33,5 +33,6 @@
             IdentityFile ~/.ssh/id_rsa
     '';
 
-    programs.helix = import programs/helix.nix inputs.helix.packages.${pkgs.system}.default;
+    programs.helix = import ./programs/helix.nix inputs.helix.packages.${pkgs.system}.default;
+    programs.kitty = import ./programs/kitty.nix pkgs.kitty;
 }
