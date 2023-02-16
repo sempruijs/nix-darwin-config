@@ -3,7 +3,7 @@ package: {
     inherit package;
     settings = {
       scrollback_lines = 1000000;
-      enable_audio_bell = false;
+      enable_audio_bell = true;
       update_check_interval = 0;
       wheel_scroll_multiplier = 1;
       wheel_scroll_min_lines = 1;
