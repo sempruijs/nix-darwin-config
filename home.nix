@@ -3,6 +3,7 @@
     home.stateVersion = "22.05";
 
     home.packages = with pkgs; [
+        nushell
         git 
         git-lfs
         gh
