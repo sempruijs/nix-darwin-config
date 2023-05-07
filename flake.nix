@@ -11,6 +11,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         helix.url = "github:helix-editor/helix";
+        nrc.url = "github:sempruijs/new-read";
     };
     outputs = {self, darwin, nixpkgs, home-manager, ...}@inputs: {
         darwinConfigurations = {
