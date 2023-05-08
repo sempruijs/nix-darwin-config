@@ -21,6 +21,10 @@ package: {
         right = [ "diagnostics" "position" "total-line-numbers" "file-encoding" ];
       };
     };
+    keys.normal = {
+      space.q = ":wqa";
+      space.Q = ":qa!";
+    };
   };
  
   languages = [
