@@ -12,6 +12,7 @@
         };
         helix.url = "github:helix-editor/helix";
         nrc.url = "github:sempruijs/new-read";
+        justhash.url = "github:sempruijs/justhash";
     };
     outputs = {self, darwin, nixpkgs, home-manager, ...}@inputs: {
         darwinConfigurations = {

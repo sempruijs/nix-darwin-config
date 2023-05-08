@@ -21,8 +21,9 @@
         cocoapods
         slides
         ripgrep
-        inputs.nrc.packages.${pkgs.system}.default
 
+        inputs.nrc.packages.${pkgs.system}.default
+        inputs.justhash.packages.${pkgs.system}.default
     ];
     # Hide "last login" message on new terminal.
     home.file.".hushlogin".text = "";
