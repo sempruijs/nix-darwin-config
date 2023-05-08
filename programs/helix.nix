@@ -25,6 +25,9 @@ package: {
       space.q = ":wqa";
       space.Q = ":qa!";
     };
+    keys.insert = {
+      j.j = "normal_mode";
+    };
   };
  
   languages = [
