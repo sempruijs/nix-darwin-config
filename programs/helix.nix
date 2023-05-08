@@ -24,9 +24,10 @@ package: {
     keys.normal = {
       space.q = ":wqa";
       space.Q = ":qa!";
+      space.W = ":w";
     };
     keys.insert = {
-      j.j = "normal_mode";
+      h.h = "normal_mode";
     };
   };
  
