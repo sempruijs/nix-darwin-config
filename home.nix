@@ -21,6 +21,7 @@
         cocoapods
         slides
         ripgrep
+        bat
 
         inputs.nrc.packages.${pkgs.system}.default
         inputs.justhash.packages.${pkgs.system}.default
