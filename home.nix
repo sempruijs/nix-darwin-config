@@ -41,5 +41,5 @@
     programs.kitty = import ./programs/kitty.nix pkgs.kitty;
     programs.lazygit = import ./programs/lazygit.nix pkgs.lazygit;
     programs.zsh = import ./programs/zsh.nix;
-
+    programs.direnv = import ./programs/direnv.nix;
 }
