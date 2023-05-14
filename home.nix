@@ -22,6 +22,7 @@
         slides
         ripgrep
         bat
+        unixtools.watch
 
         inputs.nrc.packages.${pkgs.system}.default
         inputs.justhash.packages.${pkgs.system}.default
