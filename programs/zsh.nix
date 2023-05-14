@@ -9,5 +9,6 @@
     nd = "nix develop --command zsh";
     ck = "cargo check";
     cr = "cargo run";
+    pr-status = "watch -n 10 gh pr status";
   };
 }
