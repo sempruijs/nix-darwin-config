@@ -10,5 +10,7 @@
     ck = "cargo check";
     cr = "cargo run";
     pr-status = "watch -n 10 gh pr status";
+    hs = "nix-shell -p ghc";
+    rinit = "nix flake init -t github:cor/flake-templates\#rust";
   };
 }
