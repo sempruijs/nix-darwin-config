@@ -13,6 +13,8 @@
         helix.url = "github:helix-editor/helix";
         nrc.url = "github:sempruijs/new-read";
         justhash.url = "github:sempruijs/justhash";
+        ye.url = "github:sempruijs/ye";
+        randaam-cli.url = "github:sempruijs/randaam-cli";
     };
     outputs = {self, darwin, nixpkgs, home-manager, ...}@inputs: {
         darwinConfigurations = {

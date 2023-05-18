@@ -26,6 +26,8 @@
 
         inputs.nrc.packages.${pkgs.system}.default
         inputs.justhash.packages.${pkgs.system}.default
+        inputs.ye.packages.${pkgs.system}.default
+        inputs.randaam-cli.packages.${pkgs.system}.default
     ];
     # Hide "last login" message on new terminal.
     home.file.".hushlogin".text = "";
