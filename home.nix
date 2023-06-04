@@ -23,6 +23,7 @@
         ripgrep
         bat
         unixtools.watch
+        qrencode
 
         inputs.nrc.packages.${pkgs.system}.default
         inputs.justhash.packages.${pkgs.system}.default
