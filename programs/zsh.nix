@@ -12,6 +12,7 @@
     ck = "cargo check";
     cr = "cargo run";
     cb = "cargo build";
+    ct = "cargo test";
 
     pr-status = "watch -n 10 gh pr status";
     hs = "nix-shell -p ghc";
