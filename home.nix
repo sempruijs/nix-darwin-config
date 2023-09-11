@@ -1,8 +1,8 @@
-{ config, pkgs, lib, inputs, ...}: 
+{ config, pkgs, pkgs-unstable, lib, inputs, ...}: 
 {
     home.stateVersion = "22.05";
 
-    home.packages = with pkgs; [
+    home.packages = (with pkgs; [
         nushell
         git 
         git-lfs
@@ -30,7 +30,7 @@
         inputs.justhash.packages.${pkgs.system}.default
         inputs.ye.packages.${pkgs.system}.default
         inputs.randaam-cli.packages.${pkgs.system}.default
-    ];
+    ]) ++ (with pkgs-unstable; [ zellij ]);
     # Hide "last login" message on new terminal.
     home.file.".hushlogin".text = "";
         

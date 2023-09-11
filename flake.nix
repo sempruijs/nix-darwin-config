@@ -2,6 +2,7 @@
     description = "NixOS system by sempruijs";
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+        nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
         darwin = {
             url = "github:lnl7/nix-darwin/master";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -30,7 +31,10 @@
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
                         home-manager.users.sem = import ./home.nix;
-                        home-manager.extraSpecialArgs = { inherit inputs; };
+                        home-manager.extraSpecialArgs = { 
+                            inherit inputs; 
+                            pkgs-unstable = import inputs.nixpkgs-unstable { system = "aarch64-darwin"; config.allowUnfree = true; };
+                        };
                     }
                 ];
             };
