@@ -8,6 +8,7 @@
     hxt = "CARGO_TARGET_DIR=target/rust-analyzer nix run github:pinelang/helix-tree-explorer/tree_explore"; # Helix PR with tree explorer
     nd = "nix develop --command zsh";
     zj = "zellij";
+    audio-from-yt = "nix run github:sempruijs/audio-from-yt";
 
     # quick cargo commands
     ck = "cargo check";
