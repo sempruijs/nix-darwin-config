@@ -1,5 +1,7 @@
 # nix darwin config
 
+**This repository is now archived. I merged this config into my [nixos-config](https://github.com/sempruijs/nixos-config).**
+
 I use nix with home manager to configure the software that I use on an Apple Silicon mac.
 I use [flake-parts](https://github.com/hercules-ci/flake-parts) so maybe it will work on intel based macs as well, but I have not tested that.
 
